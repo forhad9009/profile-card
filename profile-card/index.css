@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&family=Ubuntu:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    max-width: 380px;
+    width: 100%;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.images{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blue;
+    padding: 3px;
+    margin-bottom: 3%;
+}
+.images .profile-images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    height: 36%;
+    width: 100%;
+    background-color: rgb(51, 51, 238);
+
+}
+
+.text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.boxicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.boxicon .bx{
+    /* background-color: aqua; */
+    padding: 8%;
+    margin-right: 8%;
+    border-radius: 50%;
+    color: #fff;
+}
+.boxicon .bxl-facebook{
+    background-color: rgb(48, 150, 214);
+}
+.boxicon .bxl-twitter{
+    background-color: rgb(58, 46, 226);
+}
+.boxicon .bxl-instagram{
+    background-color: palevioletred;
+}
+.boxicon .bxl-youtube{
+    background-color: red;
+}
+
+.profile-card .button{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.button .btn{
+    background-color: rgb(58, 46, 226);
+    color: #fff;
+    font-weight: 400;
+    padding: 6px 20px;
+    margin: 0 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button .btn:hover{
+    background-color: blue;
+}
+
+.analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid #928a8a;
+}
+.data:last-child{
+    border-right: none;
+}
+.data i{
+    /* font-weight: 500; */
+    font-size: 18px;
+}
